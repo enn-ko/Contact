@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+th,td{
+    padding: .75rem;
+    font-weight: 500;
+    color: #fffffe
+}
+.recoverBtn{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-out;
+}
+.trashRow:hover .recoverBtn{
+    opacity: 1;
+    visibility: visible
+
+}
+
+
+
+
+/* npx tailwindcss -i ./src/App.css -o ./css/output.css --watch */
+
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
