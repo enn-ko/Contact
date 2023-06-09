@@ -10,23 +10,12 @@ import Loader from "../Services/Common/loader/Loader"
 
 const TrashTable = () => {
 
-  const isDesktop = useMediaQuery({
-    query: '(min-width: 1537px)'
-  })
-  const laptop = useMediaQuery({
-    query: '(min-width: 1280px)'
-  })
+
   const tablet = useMediaQuery({
     query: '(min-width: 1024px)'
   })
 
-  const phone = useMediaQuery({
-    query: '(min-width: 768px)'
-  })
 
-  const smPhone = useMediaQuery({
-    query: '(min-width: 640px)'
-  })
   const [allTrash, setAllTrash] = useState([]);
   const nav = useNavigate();
 

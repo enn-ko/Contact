@@ -23,23 +23,12 @@ const New = () => {
 
 
   // <----responsive new contact----->
-  const isDesktop = useMediaQuery({
-    query: "(min-width: 1537px)",
-  });
-  const laptop = useMediaQuery({
-    query: "(min-width: 1280px)",
-  });
+ 
   const tablet = useMediaQuery({
     query: "(min-width: 1024px)",
   });
 
-  const isPhone = useMediaQuery({
-    query: "(min-width: 768px)",
-  });
 
-  const smPhone = useMediaQuery({
-    query: "(min-width: 640px)",
-  });
 
   
 
