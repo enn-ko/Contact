@@ -90,7 +90,7 @@ const fileRef = useRef()
       initial={tablet ? { marginLeft: "20%" } : {marginLeft: 0} }
       animate={menuActive ? { marginLeft: 0 } : tablet ? { marginLeft: "20%" } : {marginLeft: 0}}
       transition={{ duration: 0.25 }}
-      className={`mt-8 bg-transparent ${menuActive ? "px-8" : "px-8"}`}
+      className={`mt-8 bg-transparent flex justify-between items-center ${menuActive ? "px-8" : "px-8"}`}
     >
       <form onSubmit={handleCreateContact} action="" className=" w-[25rem]">
         <Link to={"/"} >
@@ -172,8 +172,14 @@ const fileRef = useRef()
           </button>
         </div>
       </form>
-
-      
+    <div className=" hidden p-5 md:flex">
+      <img
+        className=" rounded-3xl h-full"
+        src="https://i.pinimg.com/564x/4b/b8/09/4bb8097a130e3442b1b1fa7367c380d7.jpg"
+        alt=""
+        aria-hidden="true"
+      />
+    </div>
     </motion.div>
   );
 };
